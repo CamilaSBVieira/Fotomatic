@@ -38,7 +38,7 @@ html {
 
 header {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
 }
@@ -91,16 +91,13 @@ header .mobile {
 
   header .content {
     padding: .5rem 0;
-    width: 100%;
   }
 
   header .mobile ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
   }
-
   header .mobile li {
     padding: 0;
   }
@@ -179,6 +176,7 @@ header .mobile {
     align-items: center;
     justify-content: center;
     height: 28rem;
+    width: 100vw;
   }
 
   #sign-up-cta {
@@ -213,14 +211,29 @@ header .mobile {
   }
   #sign-up-section {
     height: 20rem;
+    width: 100vw;
+  }
+
+  #sign-up-cta {
+    padding: 0;
+    position: static;
+    top: 0;
+    left: 0;
+  }
+  
+  #sign-up-cta .content {
+    max-width: 100vw;
+    margin-top: 1rem;
+    font-size: 1rem;
+    position: static;
   }
 
   #sign-up-cta h1 {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
   }
 
   #sign-up-cta h2 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
 
